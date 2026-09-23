@@ -1,0 +1,50 @@
+button {
+    color: rgb(246, 249, 246);
+    background-color: rgba(0, 0, 0, 0.993);
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+button.green {
+    background-color: rgba(107, 161, 99);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button.yellow {
+    color: rgb(0, 0, 0);
+    background-color: rgba(242, 219, 103);
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    padding: 5px 50px;
+}
+
+button.purple{
+    background-color: rgba(110, 85, 168);
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+}
+
+button.white{
+    color: rgba(123, 123, 132);
+    background-color: rgba(246, 249, 246);
+    border-radius: 5px;
+}
+
+button.blue {
+    background-color: rgba(59, 100, 182);
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+button.last {
+    color: rgba(67, 102, 175);
+    background-color: rgba(255, 255, 255);
+    font-weight: bold;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 2px solid rgba(140, 157, 193);
+}
