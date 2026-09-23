@@ -1,8 +1,19 @@
+h1 {
+    color: rgb(3, 1, 100)
+}
+
 h2 {
-    border: 1px solid black;
+    color: #F2842F;
+    border: 2px dashed black;
     padding: 10px;
 }
 
-p{
-    
+p {
+    color: rgb(37, 60, 109);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+a {
+    margin: 5px;
 }
