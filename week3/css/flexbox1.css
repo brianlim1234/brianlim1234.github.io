@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+body {
+    background-color: rgba(246, 245, 239);
+    font-family: "Oxygen", sans-serif;
+}
+
+img {
+    border-radius: 20px;
+}
+
+div.all {
+    display: flex;
+    gap: 20px;
+    padding: 0 60px;
+}
+
+div.all>div {
+    flex: 1;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+}

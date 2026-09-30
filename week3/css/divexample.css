@@ -1,0 +1,15 @@
+div.big-box {
+    display: flex;
+}
+
+div.yellow {
+    background-color:#FFF4A3;
+}
+
+div.Red { 
+    background-color:#FFC0C7;
+}
+
+div.Green {
+    background-color:#D9EEE1;
+}

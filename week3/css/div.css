@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Kripa:wght@100..900&family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&family=Long+Cang&family=Playwrite+CA+Guides&display=swap');
+h1 {
+    font-family: "Kripa", sans-serif;
+    text-align: center;
+    border-bottom: 5px dashed darkblue;
+    border-top: 3px solid red;
+    border: 5px dashed darkblue;
+    border-radius: 20px;
+    text-shadow: 2px 2px 9px rgb(239, 239, 20);
+}
+
+h2 {
+    font-family: "Playwrite CA Guides", cursive;
+    text-align: right;
+}
+
+h3 {
+    font-family: "Long Cang", cursive;
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+}
+
+p {
+    font-family: "Libre Caslon Condensed", serif;
+    line-height: 3;
+    background-color: aqua;
+    background-image: url("/week3/image/OIP.jpg");
+    background-position: center;
+}
+
+span.text {
+    font-weight: bold;
+    background-color: aqua;
+}
