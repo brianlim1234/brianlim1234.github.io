@@ -1,0 +1,42 @@
+div.big-box {
+    display: flex;
+    gap: 20px;
+    max-width: 1080px;
+    margin: auto;
+}
+
+div.yellow {
+    background-color: #FFF4A3;
+}
+
+div.Red {
+    background-color: #FFC0C7;
+    flex: 10;
+}
+
+div.Green {
+    background-color: #D9EEE1;
+}
+
+div.box {
+    padding: 10px;
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    div.Green {
+        background-color: #0fd65b;
+    }
+    div.big-box {
+        flex-direction: column;
+    }
+}
+@media (max-width: 500px){
+    div.Green {
+        background-color: #417b57;
+    }
+}
+
+div.Red {
+    flex: 2;
+}
