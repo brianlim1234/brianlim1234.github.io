@@ -1,0 +1,150 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.request {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.Hamburger {
+    display: none;
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    align-items: center;
+}
+
+.banner-title {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.banner-description {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.consultation {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: start;
+
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.banner-image {
+    grid-column: 2;
+    grid-row: 1 / 4;
+}
+
+.banner-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.logos {
+    display: flex;
+    gap: 40px;
+}
+
+.logos img {
+    filter: grayscale(100%);
+    width: 100%;
+}
+
+.services {
+    display: flex;
+    gap: 30px;
+}
+
+.services h1 {
+    background-color: rgba(185, 255, 102);
+    padding: 5px;
+}
+
+@media (max-width: 676px) {
+    .menu {
+        display: none;
+    }
+
+    .Hamburger {
+        display: block;
+    }
+}
+
+@media (max-width: 450px) {
+    .banner {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto;
+        }
+    
+        .banner-title {
+            grid-column: 1;
+            grid-row: 1;
+        }
+    
+        .banner-image {
+            grid-column: 1;
+            grid-row: 2;
+        }
+    
+        .banner-description {
+            grid-column: 1;
+            grid-row: 3;
+        }
+    
+        .consultation {
+            grid-column: 1;
+            grid-row: 4;
+            justify-self: stretch;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+    .logos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .logos img {
+        width: 80%;
+        height: auto;
+        object-fit: contain;
+    }
+    
+        .services {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+        }
+    
+        .services h1 {
+            margin-bottom: 0;
+        }
+    
+        .services p {
+            margin-top: 0;
+        }
+}
