@@ -1,0 +1,863 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    width: 100%;
+    height: 620px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("../images/order-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.logo img {
+    width: 45px;
+}
+
+.logo p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    color: #cccccc;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.menu div {
+    cursor: pointer;
+}
+
+.menu .order {
+    color: white;
+}
+
+.menu img {
+    width: 15px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.small-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 10px;
+    white-space: nowrap;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.small-text .line {
+    display: block;
+    width: 55px;
+    height: 1px;
+    background-color: white;
+    flex-shrink: 0;
+}
+
+
+.desktop-text {
+    display: inline;
+}
+
+.mobile-text {
+    display: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .desktop-text {
+        display: none;
+    }
+
+    .mobile-text {
+        display: inline;
+    }
+
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.favourites {
+    width: 100%;
+    min-height: 195px;
+    background-color: white;
+}
+
+.content {
+    max-width: 690px;
+    margin: auto;
+    padding-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subtitle {
+    font-size: 10px;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+}
+
+.description h2 {
+    font-size: 18px;
+    margin-bottom: 22px;
+}
+
+.details {
+    font-family: Georgia, serif;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.content button {
+    width: 126px;
+    height: 37px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.signature {
+    width: 100%;
+    background: #000;
+    color: white;
+    padding: 15px 0 60px;
+}
+
+.signature-container {
+    width: 86%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.section-subtitle {
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+
+.signature-container h2 {
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+.food-container {
+    display: flex;
+    gap: 12px;
+}
+
+.food-card {
+    width: 50%;
+    background: #303030;
+}
+
+.food-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.food-info {
+    padding: 18px 15px 25px;
+}
+
+.food-category {
+    font-size: 8px;
+    margin-bottom: 12px;
+    color: #eee;
+}
+
+.food-info h3 {
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.food-description {
+    font-family: Georgia, serif;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+.price {
+    color: #c5a46d;
+    font-size: 10px;
+    margin: 12px 0 15px;
+}
+
+.food-actions,
+.house-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.quantity button {
+    width: 25px;
+    height: 24px;
+    border: 1px solid #777;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.quantity input {
+    width: 25px;
+    height: 24px;
+    border: 1px solid #777;
+    background: transparent;
+    color: white;
+    text-align: center;
+}
+
+.add-cart,
+.view-cart {
+    flex: 1;
+    height: 24px;
+    font-size: 7px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.add-cart {
+    background: #c5a46d;
+    color: white;
+    border: none;
+}
+
+.view-cart {
+    background: transparent;
+    color: white;
+    border: 1px solid #777;
+}
+
+.house-favourite {
+    background: white;
+    padding: 45px 0;
+}
+
+.house-container {
+    width: 86%;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+}
+
+.house-image {
+    width: 55%;
+}
+
+.house-image img {
+    width: 100%;
+    height: 237px;
+    object-fit: cover;
+    display: block;
+}
+
+.house-info {
+    width: 45%;
+    background: black;
+    color: white;
+    padding: 45px 30px;
+}
+
+.house-info h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.house-info>p:not(.food-category) {
+    font-family: Georgia, serif;
+    font-size: 11px;
+    line-height: 17px;
+    margin-bottom: 15px;
+}
+
+.house-actions {
+    gap: 20px;
+}
+
+.house-cart {
+    width: 115px;
+    height: 28px;
+    background: white;
+    color: black;
+    border: none;
+    font-size: 8px;
+    cursor: pointer;
+}
+
+.more-food {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    padding: 25px 0 40px;
+}
+
+.more-container {
+    width: 86%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.more-subtitle {
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+
+.more-container>h2 {
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+.more-food-container {
+    display: flex;
+    gap: 12px;
+}
+
+.more-card {
+    width: 33.33%;
+    background-color: #303030;
+}
+
+.more-card>img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+}
+
+.more-info {
+    padding: 20px 15px;
+}
+
+.more-info h3 {
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.more-info>p {
+    font-family: Georgia, serif;
+    font-size: 10px;
+    line-height: 15px;
+    min-height: 30px;
+}
+
+.more-price {
+    color: #c5a46d;
+    font-size: 9px;
+    margin: 10px 0;
+}
+
+.more-quantity {
+    display: flex;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.more-quantity button {
+    width: 25%;
+    height: 23px;
+    background: transparent;
+    color: white;
+    border: 1px solid #777;
+    cursor: pointer;
+    font-size: 9px;
+}
+
+.more-quantity input {
+    width: 50%;
+    height: 23px;
+    background: transparent;
+    color: white;
+    border: 1px solid #777;
+    text-align: center;
+    font-size: 9px;
+}
+
+.more-add {
+    width: 100%;
+    height: 23px;
+    background: #c5a46d;
+    color: white;
+    border: none;
+    font-size: 7px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.more-view {
+    width: 100%;
+    height: 23px;
+    background: transparent;
+    color: white;
+    border: 1px solid #777;
+    font-size: 7px;
+    cursor: pointer;
+}
+
+.more-add:hover {
+    background: #a88b58;
+}
+
+.more-view:hover {
+    background: #555;
+}
+
+.review-cart {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 20px 120px;
+}
+
+.review-cart>p {
+    font-size: 8px;
+    margin-bottom: 12px;
+}
+
+.review-cart h2 {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.review-description {
+    font-family: Georgia, serif;
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+
+.review-cart button {
+    width: 140px;
+    height: 27px;
+    background-color: #c5a46d;
+    color: white;
+    border: none;
+    font-size: 7px;
+    cursor: pointer;
+}
+
+.review-cart button:hover {
+    background-color: #a88b58;
+}
+
+.footer {
+    width: 100%;
+    min-height: 230px;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.85)),
+        url("../images/footer-bg.png");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content {
+    width: 90%;
+    max-width: 500px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    width: 35px;
+}
+
+.footer-logo h2 {
+    font-size: 17px;
+}
+
+.footer-content>p {
+    font-family: Georgia, serif;
+    font-size: 11px;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-icons a {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+}
+
+.social-icons a:hover {
+    background-color: #c5a46d;
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1536px) {
+
+    .signature-container,
+    .more-container,
+    .house-container {
+        width: 86%;
+        max-width: 1100px;
+    }
+
+    .food-container {
+        display: flex;
+        gap: 15px;
+    }
+
+    .food-card img {
+        height: 260px;
+    }
+
+    .more-food-container {
+        display: flex;
+        gap: 15px;
+    }
+
+    .more-card {
+        width: 33.33%;
+    }
+
+    .more-card>img {
+        height: 180px;
+    }
+
+    .house-image img {
+        height: 280px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+
+    .header {
+        padding: 0 5%;
+    }
+
+    .menu {
+        gap: 12px;
+        font-size: 10px;
+    }
+
+    .hero {
+        height: 550px;
+    }
+
+    .signature-container,
+    .more-container,
+    .house-container {
+        width: 90%;
+    }
+
+    .food-container {
+        gap: 10px;
+    }
+
+    .food-card img {
+        height: 200px;
+    }
+
+    .food-info {
+        padding: 15px 10px;
+    }
+
+    .food-actions {
+        gap: 5px;
+    }
+
+    .more-food-container {
+        gap: 10px;
+    }
+
+    .more-card>img {
+        height: 130px;
+    }
+
+    .more-info {
+        padding: 15px 10px;
+    }
+
+    .more-info h3 {
+        font-size: 11px;
+    }
+
+    .more-info>p {
+        font-size: 9px;
+    }
+
+    .house-image img {
+        height: 220px;
+    }
+
+    .house-info {
+        padding: 30px 20px;
+    }
+
+    .house-info h2 {
+        font-size: 17px;
+    }
+
+}
+
+
+@media screen and (max-width: 640px) {
+
+    .header {
+        padding: 0 5%;
+    }
+
+    .menu {
+        gap: 8px;
+        font-size: 9px;
+    }
+
+    .hero {
+        height: 450px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .content {
+        width: 90%;
+        padding: 35px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+
+    .signature {
+        padding: 30px 0;
+    }
+
+    .signature-container,
+    .more-container {
+        width: 90%;
+    }
+
+    .food-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .food-card {
+        width: 100%;
+    }
+
+    .food-card img {
+        height: 220px;
+    }
+
+    .food-info {
+        padding: 20px 15px;
+    }
+
+    .food-actions {
+        gap: 8px;
+    }
+
+
+    .house-container {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .house-image,
+    .house-info {
+        width: 100%;
+    }
+
+    .house-image img {
+        height: 220px;
+    }
+
+    .house-info {
+        padding: 30px 20px;
+    }
+
+
+    .more-food {
+        padding: 30px 0;
+    }
+
+    .more-food-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .more-card {
+        width: 100%;
+    }
+
+    .more-card>img {
+        height: 220px;
+    }
+
+    .more-info {
+        padding: 20px 15px;
+    }
+
+    .more-info h3 {
+        font-size: 13px;
+    }
+
+    .more-info>p {
+        font-size: 11px;
+    }
+
+
+    .review-cart {
+        padding: 30px 15px 70px;
+    }
+
+
+    .footer {
+        min-height: 220px;
+        padding: 30px 15px;
+    }
+
+    .footer-content {
+        width: 100%;
+    }
+
+}
+
+
+.desktop-text {
+    display: inline;
+}
+
+.mobile-text {
+    display: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .desktop-text {
+        display: none;
+    }
+
+    .mobile-text {
+        display: inline;
+    }
+
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.order1 {
+    display: block;
+}
+
+.order1 img {
+    width: 25px;
+    height: auto;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+@media (max-width: 1024px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-icon img {
+        width: 25px;
+        height: auto;
+    }
+}

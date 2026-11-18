@@ -1,0 +1,870 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    width: 100%;
+    height: 620px;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.logo img {
+    width: 45px;
+}
+
+.logo p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    color: #cccccc;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.menu div {
+    cursor: pointer;
+}
+
+.menu .order {
+    color: white;
+}
+
+.menu img {
+    width: 15px;
+}
+
+.image1 {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    height: 530px;
+    background-color: black;
+}
+
+.image1>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 52%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featured {
+    position: absolute;
+    top: 50%;
+    right: 8%;
+    transform: translateY(-50%);
+    width: 35%;
+    color: white;
+}
+
+.featured-label {
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.featured h1 {
+    font-size: 36px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-family: Georgia, serif;
+    font-size: 12px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.offer {
+    font-family: Georgia, serif;
+    font-size: 11px;
+    margin-bottom: 18px;
+}
+
+.featured button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 7px 15px;
+    font-size: 9px;
+    cursor: pointer;
+}
+
+.specials {
+    width: 100%;
+    padding: 45px 8%;
+    background-color: white;
+    text-align: center;
+}
+
+.seasonal {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.short-line {
+    width: 25px;
+    height: 1px;
+    background-color: #eeeeee;
+    margin: 10px auto 15px;
+}
+
+.specials h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.specials-description {
+    font-family: Georgia, serif;
+    font-size: 11px;
+    margin-bottom: 30px;
+}
+
+.specials-cards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.special-card {
+    position: relative;
+    width: 30%;
+    text-align: center;
+}
+
+.special-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+
+.special-card h3 {
+    font-size: 11px;
+    margin-bottom: 12px;
+}
+
+.special-card p {
+    font-family: Georgia, serif;
+    font-size: 10px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.special-card button {
+    background-color: white;
+    border: 1px solid #cccccc;
+    padding: 5px 15px;
+    font-size: 8px;
+    cursor: pointer;
+}
+
+.evening-hero {
+    width: 100%;
+    height: 180px;
+    position: relative;
+    background-image: url("../images/evening.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.evening-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+}
+
+.evening-content p:first-child {
+    font-size: 9px;
+    margin-bottom: 8px;
+}
+
+.evening-content h1 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.evening-content p:last-child {
+    font-family: Georgia, serif;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.romantic-promotion {
+    width: 100%;
+    height: 880px;
+    position: relative;
+    background-color: white;
+}
+
+.promotion-image {
+    position: absolute;
+}
+
+.promotion-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cotton {
+    width: 53%;
+    height: 385px;
+    top: 35px;
+    left: 9%;
+}
+
+.cotton-text {
+    position: absolute;
+    top: 220px;
+    left: 66%;
+}
+
+.strawberry {
+    width: 40%;
+    height: 290px;
+    top: 322px;
+    right: 9%;
+}
+
+.strawberry-text {
+    position: absolute;
+    top: 460px;
+    left: 26%;
+}
+
+.wine {
+    width: 34%;
+    height: 240px;
+    top: 565px;
+    left: 29%;
+}
+
+.wine-text {
+    position: absolute;
+    top: 680px;
+    left: 65%;
+    width: 30%;
+    text-align: left;
+}
+
+.wine-text h3 {
+    font-size: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.promotion-text h3 {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.reservation {
+    position: absolute;
+    top: 820px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+}
+
+.reservation-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.reservation-text p {
+    font-size: 8px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.reservation-text .line {
+    width: 20px;
+    height: 1px;
+    background-color: #999;
+}
+
+.reservation button {
+    background-color: white;
+    border: 1px solid #cccccc;
+    padding: 5px 20px;
+    font-size: 8px;
+    cursor: pointer;
+}
+
+.membership-banner {
+    width: 100%;
+    height: 175px;
+    position: relative;
+    background-image: url("../images/membership.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.membership-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+}
+
+.membership-content h1 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.membership-content p {
+    font-family: Georgia, serif;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.membership-cards {
+    width: 100%;
+    min-height: 230px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 6.5%;
+    padding: 15px 8%;
+    background-color: white;
+}
+
+.tier-card {
+    position: relative;
+    width: 26%;
+    height: 167px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    background-color: black;
+}
+
+.classic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)),
+        url("../images/classic.jpg");
+}
+
+.prestige {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)),
+        url("../images/prestige.jpg");
+}
+
+.elite {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)),
+        url("../images/elite.jpg");
+}
+
+.tier-name {
+    font-size: 8px;
+    margin-bottom: 15px;
+}
+
+.tier-card h3 {
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+
+.tier-card ul {
+    text-align: left;
+    padding-left: 12px;
+    font-family: Georgia, serif;
+    font-size: 9px;
+    line-height: 2;
+}
+
+.tier-card button {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    padding: 4px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #777777;
+    font-size: 8px;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    min-height: 230px;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.85)),
+        url("../images/footer.png");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content {
+    width: 90%;
+    max-width: 500px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    width: 35px;
+}
+
+.footer-logo h2 {
+    font-size: 17px;
+}
+
+.footer-content>p {
+    font-family: Georgia, serif;
+    font-size: 11px;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-icons a {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+}
+
+.social-icons a:hover {
+    background-color: #c5a46d;
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1536px) {
+
+    .hero {
+        height: 620px;
+    }
+
+    .evening-hero {
+        height: 180px;
+    }
+
+    .evening-content h1 {
+        font-size: 25px;
+    }
+
+    .romantic-promotion {
+        height: 880px;
+    }
+
+    .cotton {
+        width: 53%;
+        height: 385px;
+        top: 35px;
+        left: 9%;
+    }
+
+    .cotton-text {
+        top: 220px;
+        left: 66%;
+    }
+
+    .strawberry {
+        width: 40%;
+        height: 290px;
+        top: 322px;
+        right: 9%;
+    }
+
+    .strawberry-text {
+        top: 460px;
+        left: 26%;
+    }
+
+    .wine {
+        width: 34%;
+        height: 240px;
+        top: 565px;
+        left: 29%;
+    }
+
+    .wine-text {
+        top: 680px;
+        left: 65%;
+    }
+
+    .reservation {
+        top: 820px;
+    }
+
+    .membership-banner {
+        height: 175px;
+    }
+
+    .membership-cards {
+        gap: 6.5%;
+    }
+
+    .tier-card {
+        width: 26%;
+        height: 167px;
+    }
+}
+
+
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+
+    .header {
+        padding: 0 5%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-icon img {
+        width: 25px;
+    }
+
+    .hero {
+        height: 550px;
+    }
+
+    .evening-hero {
+        height: 170px;
+    }
+
+    .evening-content h1 {
+        font-size: 22px;
+    }
+
+    .evening-content p:last-child {
+        font-size: 9px;
+    }
+
+    .romantic-promotion {
+        height: 1250px;
+    }
+
+    .cotton,
+    .strawberry,
+    .wine {
+        position: absolute;
+        width: 55%;
+        height: 220px;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+    }
+
+    .cotton {
+        top: 25px;
+    }
+
+    .cotton-text {
+        top: 260px;
+    }
+
+    .strawberry {
+        top: 430px;
+    }
+
+    .strawberry-text {
+        top: 665px;
+    }
+
+    .wine {
+        top: 835px;
+    }
+
+    .wine-text {
+        top: 1070px;
+    }
+
+    .promotion-text {
+        position: absolute;
+        left: 50%;
+        width: 90%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .promotion-text h3 {
+        font-size: 11px;
+        line-height: 1.5;
+        white-space: normal;
+    }
+
+    .reservation {
+        top: 1170px;
+    }
+
+    .membership-banner {
+        height: 165px;
+    }
+
+    .membership-content h1 {
+        font-size: 22px;
+    }
+
+    .membership-content p {
+        font-size: 9px;
+    }
+
+    .membership-cards {
+        gap: 3%;
+        padding: 15px 5%;
+    }
+
+    .tier-card {
+        width: 31%;
+        height: 180px;
+        padding: 15px 8px;
+    }
+
+    .tier-card h3 {
+        font-size: 10px;
+    }
+
+    .tier-card ul {
+        font-size: 8px;
+    }
+}
+
+
+
+@media screen and (max-width: 640px) {
+
+    .header {
+        padding: 0 5%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-icon img {
+        width: 25px;
+    }
+
+    .hero {
+        height: 450px;
+    }
+
+    .evening-hero {
+        height: 200px;
+    }
+
+    .evening-content {
+        width: 90%;
+    }
+
+    .evening-content h1 {
+        font-size: 20px;
+    }
+
+    .evening-content p:last-child {
+        font-size: 9px;
+    }
+
+    .romantic-promotion {
+        height: 1150px;
+    }
+
+    .cotton,
+    .strawberry,
+    .wine {
+        position: absolute;
+        width: 75%;
+        height: 180px;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+    }
+
+    .cotton {
+        top: 20px;
+    }
+
+    .cotton-text {
+        top: 215px;
+    }
+
+    .strawberry {
+        top: 385px;
+    }
+
+    .strawberry-text {
+        top: 580px;
+    }
+
+    .wine {
+        top: 750px;
+    }
+
+    .wine-text {
+        top: 945px;
+    }
+
+    .promotion-text {
+        position: absolute;
+        left: 50%;
+        width: 90%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .promotion-text h3 {
+        font-size: 10px;
+        line-height: 1.5;
+        white-space: normal;
+    }
+
+    .reservation {
+        top: 1050px;
+    }
+
+    .reservation-text {
+        gap: 8px;
+    }
+
+    .reservation-text p {
+        font-size: 7px;
+    }
+
+    .membership-banner {
+        height: 190px;
+    }
+
+    .membership-content {
+        width: 90%;
+    }
+
+    .membership-content h1 {
+        font-size: 21px;
+    }
+
+    .membership-content p {
+        font-size: 9px;
+    }
+
+    .membership-content br {
+        display: none;
+    }
+
+    .membership-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 25px 0;
+    }
+
+    .tier-card {
+        width: 75%;
+        height: 190px;
+    }
+
+    .tier-card h3 {
+        font-size: 12px;
+    }
+
+    .tier-card ul {
+        font-size: 10px;
+    }
+
+    .footer {
+        min-height: 220px;
+        padding: 30px 15px;
+    }
+
+    .footer-content {
+        width: 100%;
+    }
+
+}
