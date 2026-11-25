@@ -1,0 +1,91 @@
+.header {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1001;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu-item a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+.menu-icon img {
+    width: 30px;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu {
+        height: 100vh;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #222;
+
+        position: fixed;
+        top: 0;
+        right: -100%;
+
+        transition: all 0.3s ease;
+        z-index: 1000;
+    }
+
+    .menu.active {
+        opacity: 1;
+        visibility: visible;
+        right: 0;
+    }
+
+    .menu>div:not(.order1) {
+        margin: 20px 0;
+        font-size: 28px;
+    }
+
+    .menu .order1 img {
+        width: 80px;
+    }
+}
